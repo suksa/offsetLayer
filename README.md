@@ -34,7 +34,7 @@ const Container: FC<P> = () => {
   return (
     <>
       <button type="button" ref={Button} onClick={() => onClickLayerView(true)}>button<button>
-      <OffsetLayer target={target} closedLayer={() => onClickLayerView(false)}>
+      <OffsetLayer target={Button} closedLayer={() => onClickLayerView(false)}>
         <div>Hello world</div>
       </OffsetLayer>
     </>
